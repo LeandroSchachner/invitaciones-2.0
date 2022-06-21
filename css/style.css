@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar a img {
+    width: 8rem;
+}
+
+.nav-link {
+    font-family: 'Tinos', serif;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: all 1s ease;
+    position: relative;
+}
+
+
+
+
+.main-portada {
+    height: 100vh;
+    background-image: url(../assets/img/couple-1850073_1920.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-portada .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 8rem;
+    color: #fff;
+}
+
