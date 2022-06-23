@@ -1,251 +1,275 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 /*Estilos parallax*/
 
 .contenedor {
-    height: 100vh;
-    overflow: hidden;
-    overflow-y: auto;
-    perspective: 10px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 10px;
 }
 
 section {
-    background-size: cover;
-    color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .parallax-bg {
-    transform: translateY(27vh) translateZ(-10px) scale(2);
-    z-index: -5;
-    height: 200px;
+  transform: translateY(27vh) translateZ(-9px) scale(2);
+  z-index: -5;
+  height: 200px;
 }
 .parallax-dn {
-    transform: translateY(1vh) translateZ(-0.8px) scale(1.5);
-    z-index: -5;
-    height: 25vh;
+  transform: translateY(0vh) translateZ(-0.8px) scale(2);
+  z-index: -5;
+  height: 25vh;
 }
 
 .parallax-content {
-    height: 70vh;
-    display: block;
-    color: #000;
-    z-index: 10;
-    transform: translateY(-5vh) translateZ(0px) scale(1);
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
+  height: 70vh;
+  display: block;
+  color: #000;
+  z-index: 10;
+  transform: translateY(-5vh) translateZ(0px) scale(1);
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .parallax-content-dn {
-    display: block;
-    color: #000;
-    z-index: 5;
-    transform: translateY(-20vh) translateZ(-0px) scale(1);
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
+  display: block;
+  height: 40vh;
+  color: #000;
+  z-index: 5;
+  transform: translateY(5vh) translateZ(-0px) scale(1);
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .parallax-content-fn {
-    display: block;
-    color: #000;
-    overflow: hidden;
-    z-index: -5;
-    transform: translateY(-13vh) translateZ(0px) scale(1);
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
+  display: block;
+  color: #000;
+  height: 25vh;
+  overflow: hidden;
+  z-index: 5;
+  transform: translateY(-20vh) translateZ(0px) scale(1);
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.parallax-tr {
+  transform: translateY(1vh) translateZ(-0.8px) scale(2.5);
+  z-index: -5;
+  height: 8vh;
+}
+
+.parallax-content-tr {
+  display: block;
+  color: #000;
+  height: 5vh;
+  overflow: hidden;
+  z-index: -5;
+  transform: translateY(-15vh) translateZ(0px) scale(1);
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .parallax-content-card {
-    display: block;
-    background-color: #fff;
-    color: #000;
-    z-index: 5;
-    transform: translateY(0vh) translateZ(-0px) scale(1);
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  z-index: 5;
+  transform: translateY(0vh) translateZ(-0px) scale(1);
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .no-parallax-content {
-    text-align: center;
-    
-    padding: 20px;
+  text-align: center;
+
+  padding: 20px;
 }
 
 .info-section {
-    
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .title {
-    font-size: 2rem;
-    font-family: 'Parisienne', cursive;
+  font-size: 2rem;
+  font-family: "Parisienne", cursive;
 }
 .sub-title {
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #fff;
 }
 .card-title {
-    font-family: 'Parisienne', cursive;
-    font-size: 46px;
+  font-family: "Parisienne", cursive;
+  font-size: 46px;
 }
 
+.footer {
+    font-size: 8px;
+}
+
+
+/* Mouse animation */
+
 .mouse {
-    width: 12px;
-    height: 22px;
-    border: 2px solid #CDC2AE;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    display: flex;
+  width: 12px;
+  height: 22px;
+  border: 2px solid #cdc2ae;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  display: flex;
 }
 
 .mouse-wheel {
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: #CDC2AE;
-    border-radius: 50%;
-    margin: auto;
-    animation: move-wheel 1s linear infinite;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #cdc2ae;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1s linear infinite;
 }
 
 @keyframes move-wheel {
-    0% {
-        opacity: 0;
-        transform: translateY(-0.5rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0.4rem);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0.4rem);
+  }
 }
-
 
 /*Colores de fondo*/
 
 .bg-1 {
-    background-color: #988B8E;
+  background-color: #988b8e;
 }
 
 .bg-2 {
-    background: linear-gradient(90deg, rgba(0, 83, 33, 1) 0%, rgba(215, 198, 1, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 83, 33, 1) 0%,
+    rgba(215, 198, 1, 1) 100%
+  );
 }
 
 .stage,
 .ring,
 .img-album {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    user-select: none;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select: none;
 }
 
 .stage {
-    overflow: hidden;
-    background: #000;
+  overflow: hidden;
+  background: #000;
 }
 
 .album {
-    perspective: 2000px;
-    width: 300px;
-    height: 400px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  perspective: 2000px;
+  width: 300px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-
 
 /* Textos */
 
 .texts {
-    font-family: 'Roboto', sans-serif;
-    color: #354259;
-    font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #354259;
+  font-size: 18px;
 }
-
 
 /* Galeria */
 
 .gallery img {
-    transition: 0.5s;
-    overflow: visible;
+  transition: 0.5s;
+  overflow: visible;
 }
 
 .gallery img:hover {
-    -webkit-transform: scale(0.9);
-    transform: scale(1.1);
+  -webkit-transform: scale(0.9);
+  transform: scale(1.1);
 }
-
 
 /* Botones */
 
 .css-button-retro--sand {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border: 1px solid #000;
-    color: #000;
-    background: transparent;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
 }
 
 .css-button-retro--sand:hover:after {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 
 .css-button-retro--sand:after {
-    content: "";
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 5px;
-    left: 5px;
-    transition: 0.2s;
-    background-color: #CDC2AE;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #cdc2ae;
 }
 
 .css-button-fully-rounded--sand {
-    min-width: 130px;
-    height: 30px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.7rem;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 20px;
-    border: 2px solid #ccc;
-    background: #CDC2AE;
+  min-width: 130px;
+  height: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  background: #cdc2ae;
 }
 
 .css-button-fully-rounded--sand:hover {
-    background: #fff;
-    color: black;
+  background: #fff;
+  color: black;
 }
-
 
 /*@media (max-width: 360px) {
 
