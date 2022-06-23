@@ -10,7 +10,7 @@
     height: 100vh;
     overflow: hidden;
     overflow-y: auto;
-    perspective: 3px;
+    perspective: 10px;
 }
 
 section {
@@ -23,9 +23,9 @@ section {
 }
 
 .parallax-bg {
-    transform: translateZ(-0.8px) scale(1.8);
+    transform: translateZ(-10px) scale(2);
     z-index: -5;
-    height: 4vh;
+    height: 35vh;
 }
 .parallax-dn {
     transform: translateY(6vh) translateZ(-0.8px) scale(2);
@@ -35,14 +35,20 @@ section {
 
 
 .parallax-content {
+    height: 70vh;
     display: block;
     color: #000;
     z-index: -1;
-    transform: translateY(-1vh) translateZ(0px) scale(1);
+    transform: translateY(-10vh) translateZ(0px) scale(1);
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
 }
+
+.parallax-items {
+    
+}
+
 .parallax-content-dn {
     display: block;
     color: #000;
@@ -64,6 +70,7 @@ section {
 }
 
 .no-parallax-section {
+    
     height: 21vh;
 }
 
