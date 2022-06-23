@@ -10,6 +10,14 @@
   overflow: hidden;
   overflow-y: auto;
   perspective: 10px;
+  animation-name: aparecer;
+  animation-duration: 2s;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } 
 }
 
 section {
