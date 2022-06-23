@@ -23,36 +23,31 @@ section {
 }
 
 .parallax-bg {
-    transform: translateZ(-10px) scale(2);
+    transform: translateY(27vh) translateZ(-10px) scale(2);
     z-index: -5;
-    height: 35vh;
+    height: 200px;
 }
 .parallax-dn {
-    transform: translateY(6vh) translateZ(-0.8px) scale(2);
+    transform: translateY(1vh) translateZ(-0.8px) scale(1.5);
     z-index: -5;
     height: 25vh;
 }
-
 
 .parallax-content {
     height: 70vh;
     display: block;
     color: #000;
-    z-index: -1;
-    transform: translateY(-10vh) translateZ(0px) scale(1);
+    z-index: 10;
+    transform: translateY(-5vh) translateZ(0px) scale(1);
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
 }
 
-.parallax-items {
-    
-}
-
 .parallax-content-dn {
     display: block;
     color: #000;
-    z-index: -5;
+    z-index: 5;
     transform: translateY(-20vh) translateZ(-0px) scale(1);
     padding-left: 30px;
     padding-right: 30px;
@@ -62,20 +57,28 @@ section {
 .parallax-content-fn {
     display: block;
     color: #000;
+    overflow: hidden;
     z-index: -5;
-    transform: translateY(-12vh) translateZ(0px) scale(1);
+    transform: translateY(-13vh) translateZ(0px) scale(1);
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
 }
 
-.no-parallax-section {
-    
-    height: 21vh;
+.parallax-content-card {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    z-index: 5;
+    transform: translateY(0vh) translateZ(-0px) scale(1);
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
 }
 
 .no-parallax-content {
     text-align: center;
+    
     padding: 20px;
 }
 
@@ -185,7 +188,7 @@ section {
 }
 
 
-/* Buttons */
+/* Botones */
 
 .css-button-retro--sand {
     min-width: 130px;
@@ -222,9 +225,10 @@ section {
 
 .css-button-fully-rounded--sand {
     min-width: 130px;
-    height: 40px;
+    height: 30px;
     color: #fff;
     text-decoration: none;
+    font-size: 0.7rem;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
