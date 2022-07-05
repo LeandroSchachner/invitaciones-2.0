@@ -29,8 +29,8 @@ section {
   justify-content: center;
 }
 
-.parallax-bg {
-  transform: translateY(27vh) translateZ(-9px) scale(2);
+.parallax-bg { 
+  transform: translateY(27vh) translateZ(-9px) scale(1.5);
   z-index: -5;
   height: 200px;
 }
@@ -52,6 +52,7 @@ section {
 }
 
 .parallax-content-dn {
+  background-color: #fff;
   display: block;
   height: 40vh;
   color: #000;
@@ -279,36 +280,134 @@ section {
   color: black;
 }
 
-/*@media (max-width: 360px) {
-
+@media (min-width: 780px) {
     
-    .mouse {
-        width: 15px;
-        height: 30px;
-        border: 2px solid #CDC2AE;
-        border-radius: 20px;
-        margin-bottom: 15px;
-        display: flex;
+    .parallax-bg  {
+        transform: translateY(-7vh) translateZ(-9px) scale(2);
+        z-index: -5;
+        height: 10vh;
     }
-    
-    .mouse-wheel {
+      .parallax-content {
+        height: 35vh;
         display: block;
-        width: 8px;
-        height: 8px;
-        background-color: #CDC2AE;
-        border-radius: 50%;
-        margin: auto;
-        animation: move-wheel 1s linear infinite;
+        color: #000;
+        z-index: -5;
+        transform: translateY(-5vh) translateZ(0px) scale(1);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+      .parallax-bg img {
+        transform: rotate(90deg);
+    }
+      .parallax-content-dn {
+        display: block;
+        height: 15vh;
+        background-color: #fff;
+        color: #000;
+        z-index: 5;
+        transform: translateY(5vh) translateZ(-0px) scale(1);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+      .parallax-tr {
+        transform: translateY(10vh) translateZ(-0.8px) scale(2);
+        z-index: -5;
+        height: 75vh;
+    }
+      .parallax-tr img {
+      }
+
+      .parallax-content-tr {
+        display: block;
+        color: #000;
+        height: 25vh;
+        overflow: hidden;
+        z-index: -5;
+        transform: translateY(-35vh) translateZ(0px) scale(1);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+      .parallax-content-tr .title {
+        font-size: 5rem;
     }
 
-    @keyframes move-wheel {
-        0% {
-            opacity: 0;
-            transform: translateY(-0.8rem);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0.5rem);
-        }
+      .parallax-content-fn {
+        display: block;
+        color: #000;
+        height: 25vh;
+        overflow: hidden;
+        z-index: 5;
+        transform: translateY(10vh) translateZ(0px) scale(1);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+      }
+}
+
+@media (min-width: 1200px) {
+    
+    .parallax-bg  {
+        transform: translateY(-1vh) translateZ(-1px) scale(2);
+        z-index: -5;
+        height: 55vh;
     }
-  }*/
+      .parallax-content {
+        height: 45vh;
+        display: block;
+        color: #000;
+        z-index: -5;
+        transform: translateY(-25vh) translateZ(0px) scale(1.6);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+    
+    .no-parallax-content {
+        height: 25vh;
+        display: block;
+        color: #000;
+        z-index: 5;
+        transform: translateY(5vh) translateZ(0px) scale(1.6);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+    .parallax-content-card {
+        justify-content: space-between;
+        display: block;
+        color: #000;
+        z-index: -5;
+        transform: translateY(1vh) translateZ(-0px) scale(1);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+      }
+      .parallax-content-card .card {
+        width: 5rem;
+      }  
+      .parallax-content-card img {
+        width: 180px;
+      }
+      .parallax-content-card h5 {
+        font-size: 4rem;
+      }
+    .parallax-content-dn {
+        height:10vh;
+        color: #000;
+        z-index: 5;
+        transform: translateY(2vh) translateZ(-0px) scale(1.5);
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+      }
+      .parallax-tr {
+        transform: translateY(25vh) translateZ(-0.8px) scale(1);
+        z-index: -5;
+        height: 75vh;
+    }
+}       
+    
+    
