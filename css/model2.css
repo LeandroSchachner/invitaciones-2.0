@@ -17,22 +17,29 @@
   font-size: 4rem;
 }
 .card-title {
-    font-family: "Dancing Script", cursive;
-    
+  font-family: "Dancing Script", cursive;
 }
 .datos {
-    height: 30vh;
-    background-color: #ede6db;
-    justify-content: center;
+  height: 30vh;
+  background-color: #ede6db;
+  justify-content: center;
 }
 .datos p {
-    font-family: "Dancing Script", cursive;
-    font-size: 3.7rem;
+  font-family: "Dancing Script", cursive;
 }
+.items-datos img {
+  max-width: 100%;
+}
+
 .items-galeria h2 {
   font-family: "Dancing Script", cursive;
   font-size: 3.7rem;
-
+}
+.asistencia {
+  height: 35vh;
+}
+.items-asistencia p {
+  font-family: "Dancing Script", cursive;
 }
 
 /* Mouse animation */
@@ -64,5 +71,15 @@
   100% {
     opacity: 1;
     transform: translateY(0.4rem);
+  }
+}
+
+@media (max-width: 360px) {
+  .portada {
+    height: 100vh;
+    background-image: url(../assets/invitacion\ web_Mesa\ de\ trabajo\ 1.jpg);
+    background-position: 50%;
+    background-size: 1500px;
+    background-repeat: no-repeat;
   }
 }
